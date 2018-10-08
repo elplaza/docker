@@ -1,9 +1,25 @@
 version: '3.7'
 services:
+  mypsr:
+    build: images/myimage
+    volumes:
+      - type: bind
+        source: ${PWD}/apps/mypsr
+        target: /app
+      - /etc/localtime:/etc/localtime:ro
+
   fizzbuzzkata:
-    build: images/fizzbuzzkata
+    build: images/myimage
     volumes:
       - type: bind
         source: ${PWD}/apps/fizzbuzzkata
+        target: /app
+      - /etc/localtime:/etc/localtime:ro
+
+  my-first-ci-test:
+    build: images/myimage
+    volumes:
+      - type: bind
+        source: ${PWD}/apps/my-first-ci-test
         target: /app
       - /etc/localtime:/etc/localtime:ro
