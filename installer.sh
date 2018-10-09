@@ -24,6 +24,7 @@ usage()
 APPS[fizzbuzzkata]="git@github.com-federico-piazzon:federico-piazzon/fizzbuzzkata.git"
 APPS[my-first-ci-test]="git@github.com-federico-piazzon:federico-piazzon/my-first-ci-test.git"
 APPS[mypsr]="git@github.com-federico-piazzon:federico-piazzon/mypsr.git"
+APPS[localizer]="git@github.com-federico-piazzon:federico-piazzon/localizer.git"
 
 # Default Branch
 BRANCH="master"
