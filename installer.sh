@@ -23,6 +23,7 @@ usage()
 # we should rename these repositories!
 APPS[fizzbuzzkata]="git@github.com-federico-piazzon:federico-piazzon/fizzbuzzkata.git"
 APPS[my-first-ci-test]="git@github.com-federico-piazzon:federico-piazzon/my-first-ci-test.git"
+APPS[mypsr]="git@github.com-federico-piazzon:federico-piazzon/mypsr.git"
 
 # Default Branch
 BRANCH="master"
