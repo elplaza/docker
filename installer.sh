@@ -21,10 +21,10 @@ usage()
 }
 
 # we should rename these repositories!
-APPS[fizzbuzzkata]="git@github.com-federico-piazzon:federico-piazzon/fizzbuzzkata.git"
-APPS[my-first-ci-test]="git@github.com-federico-piazzon:federico-piazzon/my-first-ci-test.git"
-APPS[mypsr]="git@github.com-federico-piazzon:federico-piazzon/mypsr.git"
-APPS[localizer]="git@github.com-federico-piazzon:federico-piazzon/localizer.git"
+APPS[fizzbuzzkata]="git@github.com-elplaza:elplaza/fizzbuzzkata.git"
+APPS[my-first-ci-test]="git@github.com-elplaza:elplaza/my-first-ci-test.git"
+APPS[mypsr]="git@github.com-elplaza:elplaza/mypsr.git"
+APPS[localizer]="git@github.com-elplaza:elplaza/localizer.git"
 
 # Default Branch
 BRANCH="master"
