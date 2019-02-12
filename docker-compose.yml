@@ -1,5 +1,13 @@
 version: '3.7'
 services:
+  phpcs-configurator:
+    build: images/myimage
+    volumes:
+      - type: bind
+        source: ${PWD}/apps/phpcs-configurator
+        target: /app
+      - /etc/localtime:/etc/localtime:ro
+
   localizer:
     build: images/myimage
     volumes:
