@@ -25,6 +25,8 @@ APPS[fizzbuzzkata]="git@github.com-elplaza:elplaza/fizzbuzzkata.git"
 APPS[my-first-ci-test]="git@github.com-elplaza:elplaza/my-first-ci-test.git"
 APPS[mypsr]="git@github.com-elplaza:elplaza/mypsr.git"
 APPS[localizer]="git@github.com-elplaza:elplaza/localizer.git"
+APPS[phpcs]="git@github.com-elplaza:elplaza/PHP_CodeSniffer.git"
+APPS[phpcs-configurator]="git@github.com-elplaza:elplaza/phpcs-configurator.git"
 
 # Default Branch
 BRANCH="master"
