@@ -1,5 +1,18 @@
 version: '3.7'
 services:
+  creationart:
+    build: images/myapache
+    ports:
+      - "80:80"
+    volumes:
+      - type: bind
+        source: ${PWD}/apps/creationart
+        target: /var/www/html/creationart
+      - type: bind
+        source: ${PWD}/apps/creation
+        target: /var/www/html/creation
+      - /etc/localtime:/etc/localtime:ro
+
   phpcs-configurator:
     build: images/myimage
     volumes:
