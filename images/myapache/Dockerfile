@@ -47,7 +47,6 @@ ENV LC_ALL it_IT.utf8
 # Abilitiamo alcuni moduli di apache
 RUN a2enmod rewrite
 
-COPY creation.conf /etc/apache2/sites-available/
 COPY creationart.conf /etc/apache2/sites-available/
 
 RUN a2ensite creationart.conf && \
