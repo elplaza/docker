@@ -50,8 +50,7 @@ RUN a2enmod rewrite
 COPY creation.conf /etc/apache2/sites-available/
 COPY creationart.conf /etc/apache2/sites-available/
 
-RUN a2ensite creation.conf && \
-	a2ensite creationart.conf && \
+RUN a2ensite creationart.conf && \
 	a2dissite 000-default.conf
 
 # Cartella di lavoro

@@ -27,6 +27,7 @@ APPS[mypsr]="git@github.com-elplaza:elplaza/mypsr.git"
 APPS[localizer]="git@github.com-elplaza:elplaza/localizer.git"
 APPS[phpcs]="git@github.com-elplaza:elplaza/PHP_CodeSniffer.git"
 APPS[phpcs-configurator]="git@github.com-elplaza:elplaza/phpcs-configurator.git"
+APPS[creationart]="git@github.com-elplaza:elplaza/creationart.git"
 
 # Default Branch
 BRANCH="master"

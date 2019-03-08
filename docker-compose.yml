@@ -8,9 +8,6 @@ services:
       - type: bind
         source: ${PWD}/apps/creationart
         target: /var/www/html/creationart
-      - type: bind
-        source: ${PWD}/apps/creation
-        target: /var/www/html/creation
       - /etc/localtime:/etc/localtime:ro
 
   phpcs-configurator:
