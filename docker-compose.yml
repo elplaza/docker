@@ -1,5 +1,15 @@
 version: '3.7'
 services:
+  nodejs:
+    build: images/mynode
+    ports:
+      - "80:3000"
+    volumes:
+      - type: bind
+        source: ${PWD}/apps/nodeapi
+        target: /app
+      - /etc/localtime:/etc/localtime:ro
+
   creationart:
     build: images/myapache
     ports:
