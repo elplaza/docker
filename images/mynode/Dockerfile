@@ -29,6 +29,8 @@ ENV LC_ALL it_IT.utf8
 RUN curl -sL https://deb.nodesource.com/setup_11.x | bash -
 RUN apt update && DEBIAN_FRONTEND=noninteractive apt install -y nodejs
 
+RUN npm install -g nodemon
+
 # Cartella di lavoro
 WORKDIR /app
 

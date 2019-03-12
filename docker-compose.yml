@@ -4,11 +4,23 @@ services:
     build: images/mynode
     ports:
       - "80:3000"
+    depends_on:
+      - mongo
     volumes:
       - type: bind
         source: ${PWD}/apps/nodeapi
         target: /app
       - /etc/localtime:/etc/localtime:ro
+    networks:
+      - api
+
+  mongo:
+    image: mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: root
+    networks:
+      - api
 
   creationart:
     build: images/myapache
@@ -59,3 +71,6 @@ services:
         source: ${PWD}/apps/my-first-ci-test
         target: /app
       - /etc/localtime:/etc/localtime:ro
+
+networks:
+  api:
