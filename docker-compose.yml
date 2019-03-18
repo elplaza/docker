@@ -1,5 +1,21 @@
 version: '3.7'
 services:
+  learnyounode:
+    build: images/mylearnyounode
+    volumes:
+      - type: bind
+        source: ${PWD}/apps/learnyounode
+        target: /app
+      - /etc/localtime:/etc/localtime:ro
+
+  javascripting:
+    build: images/myjavascripting
+    volumes:
+      - type: bind
+        source: ${PWD}/apps/javascripting
+        target: /app
+      - /etc/localtime:/etc/localtime:ro
+
   nodejs:
     build: images/mynode
     ports:

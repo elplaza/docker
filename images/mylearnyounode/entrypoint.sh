@@ -14,17 +14,12 @@ npm i -g npm
 npm install
 
 case "$1" in
-	start)
-		DEBUG=express:* npm start
-		;;
-
 	bash)
 		/bin/bash
 		;;
 
 	*)
 		echo "This container accepts the following commands:"
-		echo "- start"
 		echo "- bash"
 		exit 1
 esac
